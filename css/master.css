@@ -1,0 +1,67 @@
+/*global*/
+*{
+  box-sizing: border-box;
+  margin:0 ;
+  padding: 0;
+}
+img{
+  width: 100%;
+}
+ul{
+  list-style-type: none;
+}
+/** aplicando css al encabezado*/
+#logo{
+  width: 50%;
+  margin: auto;
+  padding: top 10px; ;
+}
+#menu{
+  text-align: center;
+}
+
+
+
+/*aplicando comportamiento responsive*/
+/*tablet*/
+@media (min-width: 768px) {
+   
+    /*trabajando con css grid/ ,mirar el contenedor*/ 
+    #encabezado {
+      display: grid;
+      grid-template-columns:1fr 2fr ;
+      align-items: center;
+    }
+    #menu{
+     display:grid;
+     grid-template-columns:repeat(4,1fr) ;
+    }
+    #opcionesDerecho{
+      display: grid;
+      grid-template-columns:1fr,1fr ;
+    }
+    #opcionesIzquierdo{
+      display: grid;
+      grid-template-columns: ;
+    }
+
+   #producto{
+     display: grid;
+     grid-template-columns:1fr 1fr ;
+   }
+   /*galeria*/
+   section #galeria {
+    display: grid;
+    grid-template-columns:repeat(2,1fr) ;
+    gap: 10px;
+   }
+  }  
+   /*mas grande*/
+   @media (min-width: 992px) {
+    section #galeria {
+      display: grid;
+      grid-template-columns:repeat(4,1fr) ;
+      gap: 10px;
+     }
+       
+      } 
